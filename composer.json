@@ -1,5 +1,5 @@
 {
-    "name": "weburnit/iw-visual-insight",
+    "name": "weburnit/ibm-visual-insight",
     "description": "API client which supports IBM Watson - Visual Insight",
     "require": {
         "guzzlehttp/guzzle": "~5.3"
