@@ -1,0 +1,34 @@
+{
+    "name": "weburnit/iw-visual-insight",
+    "description": "API client which supports IBM Watson - Visual Insight",
+    "require": {
+        "guzzlehttp/guzzle": "~5.3"
+    },
+    "require-dev": {
+        "php": ">=5.5.0",
+        "phpunit/phpunit": "~4.6",
+        "adlawson/vfs": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "IBMWatson": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IBMWatson\\Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Aan",
+            "email": "weburnittv@gmail.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
