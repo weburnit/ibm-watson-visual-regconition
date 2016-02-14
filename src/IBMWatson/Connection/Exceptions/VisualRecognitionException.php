@@ -4,7 +4,7 @@ namespace IBMWatson\Connection\Exceptions;
 
 use GuzzleHttp\Message\ResponseInterface;
 
-abstract class VisualInsightException extends \Exception
+abstract class VisualRecognitionException extends \Exception
 {
     public function __construct(
         $reponse_code = 400,

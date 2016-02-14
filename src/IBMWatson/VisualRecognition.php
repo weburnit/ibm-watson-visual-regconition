@@ -14,9 +14,9 @@ use IBMWatson\Response\Classifier;
  * This class is the base class for the IBMWatson SDK.
  * Follow official documentation (link below) for usage instructions.
  *
- * @link https://github.com/weburnit/iw-visual-insight/README.md
+ * @link https://github.com/weburnit/iw-visual-recognition/README.md
  */
-class VisualInsight
+class VisualRecognition
 {
 
     /**
@@ -30,7 +30,7 @@ class VisualInsight
     private $version;
 
     /**
-     * VisualInsight constructor.
+     * VisualRecognition constructor.
      *
      * @param $username
      * @param $password

@@ -7,12 +7,12 @@ use GuzzleHttp\Stream\Stream;
 use GuzzleHttp\Subscriber\Mock;
 use IBMWatson\Response\Classification;
 use IBMWatson\Response\Classifier;
-use IBMWatson\VisualInsight;
+use IBMWatson\VisualRecognition;
 use Vfs\FileSystem;
 use Vfs\Node\Directory;
 use Vfs\Node\File;
 
-class VisualInsightTest extends \PHPUnit_Framework_TestCase
+class VisualRecognitionTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var FileSystem
@@ -20,7 +20,7 @@ class VisualInsightTest extends \PHPUnit_Framework_TestCase
     private $fileSystem;
 
     /**
-     * @var VisualInsight
+     * @var VisualRecognition
      */
     private $service;
 
@@ -33,7 +33,7 @@ class VisualInsightTest extends \PHPUnit_Framework_TestCase
         $fs->get('/')->add('folder', $dir);
         $this->fileSystem = $fs;
 
-        $this->service = new VisualInsight('78ba7889-e331-4f58-958b-254f9231b1d2', 'MHsln6fPvCEp', '2015-12-02');
+        $this->service = new VisualRecognition('78ba7889-e331-4f58-958b-254f9231b1d2', 'MHsln6fPvCEp', '2015-12-02');
     }
 
     protected function tearDown()

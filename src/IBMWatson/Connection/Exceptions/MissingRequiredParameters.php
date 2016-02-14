@@ -3,7 +3,7 @@ namespace IBMWatson\Connection\Exceptions;
 
 use IBMWatson\Constants\ExceptionMessages;
 
-class MissingRequiredParameters extends VisualInsightException
+class MissingRequiredParameters extends VisualRecognitionException
 {
     public function getDefaultMessage()
     {

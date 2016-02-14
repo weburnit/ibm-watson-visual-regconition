@@ -3,10 +3,10 @@ namespace IBMWatson\Connection\Exceptions;
 
 use IBMWatson\Constants\ExceptionMessages;
 
-class GenericHTTPError extends VisualInsightException
+class GenericHTTPError extends VisualRecognitionException
 {
 
-    public function getMessage()
+    public function getDefaultMessage()
     {
         return ExceptionMessages::EXCEPTION_GENERIC_HTTP_ERROR;
     }
