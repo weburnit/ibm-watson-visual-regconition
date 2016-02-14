@@ -17,7 +17,7 @@ class Classification
     /**
      * Classifier constructor.
      *
-     * @param array $response
+     * @param array $responseData
      */
     public function __construct(array $responseData)
     {
@@ -33,11 +33,17 @@ class Classification
         }
     }
 
+    /**
+     * @return Score[]
+     */
     public function getScores()
     {
         return $this->scores;
     }
 
+    /**
+     * @return string
+     */
     public function getImage()
     {
         return $this->image;

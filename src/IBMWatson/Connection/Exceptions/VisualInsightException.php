@@ -21,5 +21,8 @@ abstract class VisualInsightException extends \Exception
         parent::__construct($message, $reponse_code);
     }
 
+    /**
+     * @return string return default exception message
+     */
     public abstract function getDefaultMessage();
 }

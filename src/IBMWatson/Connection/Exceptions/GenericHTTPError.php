@@ -6,7 +6,7 @@ use IBMWatson\Constants\ExceptionMessages;
 class GenericHTTPError extends VisualInsightException
 {
 
-    public function getDefaultMessage()
+    public function getMessage()
     {
         return ExceptionMessages::EXCEPTION_GENERIC_HTTP_ERROR;
     }

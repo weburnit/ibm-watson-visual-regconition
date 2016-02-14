@@ -30,7 +30,6 @@ class RestClient
      *
      * @param $username
      * @param $password
-     * @param $apiVersion
      */
     public function __construct($username, $password)
     {

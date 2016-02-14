@@ -30,11 +30,11 @@ class VisualInsight
     private $version;
 
     /**
-     * @param string|null $apiKey
-     * @param string      $apiEndpoint
-     * @param string      $apiVersion
-     * @param bool        $ssl
-     * @param string      $version
+     * VisualInsight constructor.
+     *
+     * @param $username
+     * @param $password
+     * @param $version
      */
     public function __construct($username, $password, $version)
     {
@@ -71,12 +71,12 @@ class VisualInsight
     }
 
     /**
-     * @param       $file
+     * @param array $files
      * @param array $classifiers
      *
      * @return Classification
      */
-    public function classifyImages($files, array $classifiers)
+    public function classifyImages(array $files, array $classifiers)
     {
         $builder               = new ClassifierBuilder();
         $ids                   = [];
@@ -119,8 +119,12 @@ class VisualInsight
     }
 
     /**
+     * @param $name
      * @param $positiveFiles
      * @param $negativeFiles
+     *
+     * @return Classifier
+     * @throws NotEnoughImages
      */
     public function createClassifier($name, array $positiveFiles, array $negativeFiles)
     {

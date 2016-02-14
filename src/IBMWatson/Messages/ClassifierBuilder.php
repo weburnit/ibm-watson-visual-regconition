@@ -5,6 +5,14 @@ namespace IBMWatson\Messages;
 class ClassifierBuilder
 {
 
+    /**
+     * Compress array of files and return zip file location
+     *
+     * @param array  $files
+     * @param string $destination
+     *
+     * @return string
+     */
     public function compressFiles($files = [], $destination = '')
     {
         $valid_files = [];
