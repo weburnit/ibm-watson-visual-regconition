@@ -30,12 +30,13 @@ class RestClient
      *
      * @param $username
      * @param $password
+     * @param $url
      */
-    public function __construct($username, $password)
+    public function __construct($username, $password, $url = Api::IBM_WATSON_VISUAL_INSIGHT_API)
     {
         $this->mgClient = new Guzzle(
             [
-                'base_url' => Api::IBM_WATSON_VISUAL_INSIGHT_API,
+                'base_url' => $url,
                 'defaults' => [
                     'auth'       => [$username, $password],
                     'exceptions' => false,

@@ -35,10 +35,11 @@ class VisualRecognition
      * @param $username
      * @param $password
      * @param $version
+     * @param $url
      */
-    public function __construct($username, $password, $version)
+    public function __construct($username, $password, $version, $url = null)
     {
-        $this->restClient = new RestClient($username, $password);
+        $this->restClient = new RestClient($username, $password, $url);
         $this->setVersion($version);
     }
 
@@ -166,7 +167,7 @@ class VisualRecognition
 
     private function versioningURI($uri)
     {
-        return sprintf('%s/%s%s?version=%s', Api::IBM_WATSON_BASE_URI, Api::API_VERSION, $uri, $this->version);
+        return sprintf('/%s%s?version=%s', Api::API_VERSION, $uri, $this->version);
     }
 
     /**
