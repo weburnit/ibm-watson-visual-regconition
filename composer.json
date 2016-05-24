@@ -2,7 +2,7 @@
     "name": "weburnit/ibm-visual-recognition",
     "description": "API client which supports IBM Watson - Visual Insight",
     "require": {
-        "guzzlehttp/guzzle": "~5.3"
+        "guzzlehttp/guzzle": "^6.0"
     },
     "require-dev": {
         "php": ">=5.5.0",
